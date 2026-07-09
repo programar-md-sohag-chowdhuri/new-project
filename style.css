@@ -1,3 +1,17 @@
+/* Mobile */
+@media (max-width: 576px) {
+
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 991px) {
+
+}
+
+/* Laptop/Desktop */
+@media (min-width: 992px) {
+
+}
 *{
     margin: 0;
     padding: 0;
