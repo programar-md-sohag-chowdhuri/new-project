@@ -1,17 +1,3 @@
-/* Mobile */
-@media (max-width: 576px) {
-
-}
-
-/* Tablet */
-@media (min-width: 577px) and (max-width: 991px) {
-
-}
-
-/* Laptop/Desktop */
-@media (min-width: 992px) {
-
-}
 *{
     margin: 0;
     padding: 0;
@@ -41,6 +27,7 @@
         cursor: pointer;
     }
 .container{
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 12px 0px;
@@ -132,10 +119,18 @@ ul li a{
         gap: 10px;
     }
     .container-style img {
-        width: 600px;
-        height: 600px;
-        object-fit: cover;
+        width:100%;
+    max-width:350px;
+    height:auto;
+    border-radius:10px
     }
+    img{
+    max-width:100%;
+    display:block;
+}
+html{
+    scroll-behavior:smooth;
+}
 .why-us{
     padding:80px 0;
     background:#f8f8f8;
@@ -270,4 +265,157 @@ footer{
 
 footer p{
     margin-top:10px;
+}
+/* ===================================
+   RESPONSIVE DESIGN
+=================================== */
+
+/* Laptop */
+@media (max-width:1200px){
+
+.container{
+    width:95%;
+}
+
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+nav{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.smart-jone{
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:40px;
+}
+
+.smart-jone-right img{
+    width:350px;
+    max-width:100%;
+    height:auto;
+}
+
+.about-box-parent{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.box{
+    width:45%;
+}
+
+.container-style img{
+    width:100%;
+    height:auto;
+}
+
+}
+
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.logo{
+    font-size:28px;
+    text-align:center;
+}
+
+nav ul{
+    flex-direction:column;
+    gap:15px;
+}
+
+.smart-jone-left h2{
+    font-size:32px;
+}
+
+.smart-jone-left p{
+    font-size:16px;
+    line-height:1.7;
+}
+
+.smart-jone-left-button-parent{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.common-button,
+.outline-button{
+    width:200px;
+}
+
+.about-box-parent{
+    flex-direction:column;
+}
+
+.box{
+    width:100%;
+}
+
+.container-style{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.container-style img{
+    width:100%;
+    height:auto;
+}
+
+}
+
+
+/* Small Mobile */
+
+@media (max-width:480px){
+
+.logo{
+    font-size:22px;
+}
+
+.smart-jone-left h2{
+    font-size:28px;
+}
+
+.smart-jone-left p{
+    font-size:15px;
+}
+
+.common-button,
+.outline-button{
+    width:100%;
+}
+
+}
+.common-button{
+    transition:.3s;
+}
+
+.common-button:hover{
+    background:#000;
+    color:#fff;
+}
+
+.outline-button{
+    transition:.3s;
+}
+
+.outline-button:hover{
+    background:#f36506;
+    color:#fff;
 }
